@@ -1,0 +1,239 @@
+
+Welcome to antechamber 17.3: molecular input file processor.
+
+acdoctor mode is on: check and diagnosis problems in the input file.
+-- Check Format for pdb File --
+   Status: pass
+-- Check Unusual Elements --
+   Status: pass
+-- Check Open Valences --
+   Status: pass
+-- Check Geometry --
+      for those bonded   
+      for those not bonded   
+   Status: pass
+-- Check Weird Bonds --
+   Status: pass
+-- Check Number of Units --
+   Status: pass
+acdoctor mode has completed checking the input file.
+
+Running: /home/st/st_st/st_ac121490/pores/antechamber/amber16/bin/bondtype -j full -i ANTECHAMBER_BOND_TYPE.AC0 -o ANTECHAMBER_BOND_TYPE.AC -f ac
+Warning: The assigned bond types may be wrong, please :
+(1) double check the structure (the connectivity) and/or 
+(2) adjust atom valence penalty parameters in APS.DAT, and/or 
+(3) increase PSCUTOFF in define.h and recompile bondtype.c
+    (be cautious, using a large value of PSCUTOFF (>100) will 
+    significantly increase the computation time).
+
+Running: /home/st/st_st/st_ac121490/pores/antechamber/amber16/bin/atomtype -i ANTECHAMBER_AC.AC0 -o ANTECHAMBER_AC.AC -p gaff
+Info: Total number of electrons: 143; net charge: 0
+Info: The number of electrons is odd (143).
+      Please check the total charge (-nc flag) and spin multiplicity (-m flag).
+
+Running: /home/st/st_st/st_ac121490/pores/antechamber/amber16/bin/sqm -O -i sqm.in -o sqm.out
+/home/st/st_st/st_ac121490/pores/antechamber/amber16/bin/to_be_dispatched/antechamber: Fatal Error!
+Cannot properly run "/home/st/st_st/st_ac121490/pores/antechamber/amber16/bin/sqm -O -i sqm.in -o sqm.out".
+Traceback (most recent call last):
+  File "../neutralize.py", line 8, in <module>
+    res = pmd.load_file(fileName+".mol2")
+  File "/home/st/st_st/st_ac121490/.local/lib/python2.7/site-packages/ParmEd-2.7.3_223.g77b3676-py2.7-linux-x86_64.egg/parmed/formats/registry.py", line 168, in load_file
+    raise IOError('%s does not exist' % filename)
+IOError: cydtail.mol2 does not exist
+Cannot open file (cydtail.mol2) with mode (r).
+No such file or directory
+rm: das Entfernen von „cydtail.top“ ist nicht möglich: Datei oder Verzeichnis nicht gefunden
+-I: Adding /home/st/st_st/st_ac121490/pores/antechamber/amber16/dat/leap/prep to search path.
+-I: Adding /home/st/st_st/st_ac121490/pores/antechamber/amber16/dat/leap/lib to search path.
+-I: Adding /home/st/st_st/st_ac121490/pores/antechamber/amber16/dat/leap/parm to search path.
+-I: Adding /home/st/st_st/st_ac121490/pores/antechamber/amber16/dat/leap/cmd to search path.
+-f: Source cydtail.tleap.
+
+Welcome to LEaP!
+(no leaprc in search path)
+Sourcing: ./cydtail.tleap
+----- Source: /home/st/st_st/st_ac121490/pores/antechamber/amber16/dat/leap/cmd/leaprc.gaff
+----- Source of /home/st/st_st/st_ac121490/pores/antechamber/amber16/dat/leap/cmd/leaprc.gaff done
+Log file: ./leap.log
+Loading parameters: /home/st/st_st/st_ac121490/pores/antechamber/amber16/dat/leap/parm/gaff.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 1.8, Mar 2015)
+Could not open file cydtail.mol2: not found
+Could not open file cydtail.frcmod: not found
+saveOff: Argument #1 is type String must be of type: [unit parameter_set list]
+usage:  saveOff <object> <filename>
+saveAmberParm: Argument #1 is type String must be of type: [unit]
+usage:  saveAmberParm <unit> <topologyfile> <coordfile> 
+	Quit
+Traceback (most recent call last):
+  File "../toGro.py", line 8, in <module>
+    amber = pmd.load_file(fileName+".prmtop",fileName+".inpcrd")
+  File "/home/st/st_st/st_ac121490/.local/lib/python2.7/site-packages/ParmEd-2.7.3_223.g77b3676-py2.7-linux-x86_64.egg/parmed/formats/registry.py", line 168, in load_file
+    raise IOError('%s does not exist' % filename)
+IOError: cydtail.prmtop does not exist
+rm: das Entfernen von „*.lib“ ist nicht möglich: Datei oder Verzeichnis nicht gefunden
+
+Welcome to antechamber 17.3: molecular input file processor.
+
+acdoctor mode is on: check and diagnosis problems in the input file.
+-- Check Format for pdb File --
+   Status: pass
+-- Check Unusual Elements --
+   Status: pass
+-- Check Open Valences --
+   Status: pass
+-- Check Geometry --
+      for those bonded   
+      for those not bonded   
+   Status: pass
+-- Check Weird Bonds --
+   Status: pass
+-- Check Number of Units --
+   Status: pass
+acdoctor mode has completed checking the input file.
+
+Running: /home/st/st_st/st_ac121490/pores/antechamber/amber16/bin/bondtype -j full -i ANTECHAMBER_BOND_TYPE.AC0 -o ANTECHAMBER_BOND_TYPE.AC -f ac
+
+Running: /home/st/st_st/st_ac121490/pores/antechamber/amber16/bin/atomtype -i ANTECHAMBER_AC.AC0 -o ANTECHAMBER_AC.AC -p gaff
+Info: Total number of electrons: 144; net charge: 0
+
+Running: /home/st/st_st/st_ac121490/pores/antechamber/amber16/bin/sqm -O -i sqm.in -o sqm.out
+
+Running: /home/st/st_st/st_ac121490/pores/antechamber/amber16/bin/am1bcc -i ANTECHAMBER_AM1BCC_PRE.AC -o ANTECHAMBER_AM1BCC.AC -f ac -p /home/st/st_st/st_ac121490/pores/antechamber/amber16/dat/antechamber/BCCPARM.DAT -s 2 -j 1
+
+Running: /home/st/st_st/st_ac121490/pores/antechamber/amber16/bin/atomtype -f ac -p bcc -o ANTECHAMBER_AM1BCC.AC -i ANTECHAMBER_AM1BCC_PRE.AC
+
+rm: das Entfernen von „cydtail.top“ ist nicht möglich: Datei oder Verzeichnis nicht gefunden
+-I: Adding /home/st/st_st/st_ac121490/pores/antechamber/amber16/dat/leap/prep to search path.
+-I: Adding /home/st/st_st/st_ac121490/pores/antechamber/amber16/dat/leap/lib to search path.
+-I: Adding /home/st/st_st/st_ac121490/pores/antechamber/amber16/dat/leap/parm to search path.
+-I: Adding /home/st/st_st/st_ac121490/pores/antechamber/amber16/dat/leap/cmd to search path.
+-f: Source cydtail.tleap.
+
+Welcome to LEaP!
+(no leaprc in search path)
+Sourcing: ./cydtail.tleap
+----- Source: /home/st/st_st/st_ac121490/pores/antechamber/amber16/dat/leap/cmd/leaprc.gaff
+----- Source of /home/st/st_st/st_ac121490/pores/antechamber/amber16/dat/leap/cmd/leaprc.gaff done
+Log file: ./leap.log
+Loading parameters: /home/st/st_st/st_ac121490/pores/antechamber/amber16/dat/leap/parm/gaff.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 1.8, Mar 2015)
+Loading Mol2 file: ./cydtail.mol2
+Reading MOLECULE named CYT
+Loading parameters: ./cydtail.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+remark goes here
+ Creating cydtail.lib
+Building topology.
+Building atom parameters.
+Checking Unit.
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ total 3 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	CYT	1
+  )
+ (no restraints)
+	Quit
+Traceback (most recent call last):
+  File "../toGro.py", line 12, in <module>
+    amber.save(fileName+".gro")
+  File "/home/st/st_st/st_ac121490/.local/lib/python2.7/site-packages/ParmEd-2.7.3_223.g77b3676-py2.7-linux-x86_64.egg/parmed/structure.py", line 1478, in save
+    raise IOError('%s exists; not overwriting' % fname)
+IOError: cydtail.gro exists; not overwriting
+
+Welcome to antechamber 17.3: molecular input file processor.
+
+acdoctor mode is on: check and diagnosis problems in the input file.
+-- Check Format for pdb File --
+   Status: pass
+-- Check Unusual Elements --
+   Status: pass
+-- Check Open Valences --
+   Status: pass
+-- Check Geometry --
+      for those bonded   
+      for those not bonded   
+   Status: pass
+-- Check Weird Bonds --
+   Status: pass
+-- Check Number of Units --
+   Status: pass
+acdoctor mode has completed checking the input file.
+
+Running: /home/st/st_st/st_ac121490/pores/antechamber/amber16/bin/bondtype -j full -i ANTECHAMBER_BOND_TYPE.AC0 -o ANTECHAMBER_BOND_TYPE.AC -f ac
+
+Running: /home/st/st_st/st_ac121490/pores/antechamber/amber16/bin/atomtype -i ANTECHAMBER_AC.AC0 -o ANTECHAMBER_AC.AC -p gaff
+Info: Total number of electrons: 144; net charge: 0
+
+Running: /home/st/st_st/st_ac121490/pores/antechamber/amber16/bin/sqm -O -i sqm.in -o sqm.out
+
+Running: /home/st/st_st/st_ac121490/pores/antechamber/amber16/bin/am1bcc -i ANTECHAMBER_AM1BCC_PRE.AC -o ANTECHAMBER_AM1BCC.AC -f ac -p /home/st/st_st/st_ac121490/pores/antechamber/amber16/dat/antechamber/BCCPARM.DAT -s 2 -j 1
+
+Running: /home/st/st_st/st_ac121490/pores/antechamber/amber16/bin/atomtype -f ac -p bcc -o ANTECHAMBER_AM1BCC.AC -i ANTECHAMBER_AM1BCC_PRE.AC
+
+-I: Adding /home/st/st_st/st_ac121490/pores/antechamber/amber16/dat/leap/prep to search path.
+-I: Adding /home/st/st_st/st_ac121490/pores/antechamber/amber16/dat/leap/lib to search path.
+-I: Adding /home/st/st_st/st_ac121490/pores/antechamber/amber16/dat/leap/parm to search path.
+-I: Adding /home/st/st_st/st_ac121490/pores/antechamber/amber16/dat/leap/cmd to search path.
+-f: Source cydtail.tleap.
+
+Welcome to LEaP!
+(no leaprc in search path)
+Sourcing: ./cydtail.tleap
+----- Source: /home/st/st_st/st_ac121490/pores/antechamber/amber16/dat/leap/cmd/leaprc.gaff
+----- Source of /home/st/st_st/st_ac121490/pores/antechamber/amber16/dat/leap/cmd/leaprc.gaff done
+Log file: ./leap.log
+Loading parameters: /home/st/st_st/st_ac121490/pores/antechamber/amber16/dat/leap/parm/gaff.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 1.8, Mar 2015)
+Loading Mol2 file: ./cydtail.mol2
+Reading MOLECULE named CYT
+Loading parameters: ./cydtail.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+remark goes here
+ Creating cydtail.lib
+Building topology.
+Building atom parameters.
+Checking Unit.
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ total 3 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	CYT	1
+  )
+ (no restraints)
+	Quit
+Traceback (most recent call last):
+  File "../toGro.py", line 12, in <module>
+    amber.save(fileName+".gro")
+  File "/home/st/st_st/st_ac121490/.local/lib/python2.7/site-packages/ParmEd-2.7.3_223.g77b3676-py2.7-linux-x86_64.egg/parmed/structure.py", line 1478, in save
+    raise IOError('%s exists; not overwriting' % fname)
+IOError: cydtail.gro exists; not overwriting

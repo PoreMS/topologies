@@ -1,0 +1,23 @@
+Remark line goes here
+MASS
+b  0.000         0.000               ATTN, no polarizability parameter
+
+BOND
+b -ca    0.00   0.000       ATTN, need revision
+
+ANGLE
+b -ca-ca    0.000       0.000   ATTN, need revision
+ca-b -ca    0.000       0.000   ATTN, need revision
+
+DIHE
+ca-b -ca-ca   1    0.000         0.000           0.000      ATTN, need revision
+
+IMPROPER
+b -ca-ca-ca         1.1          180.0         2.0          Using the default value
+ca-ca-ca-ha         1.1          180.0         2.0          Using general improper torsional angle  X- X-ca-ha, penalty score=  6.0)
+
+NONBON
+  b           0.0000  0.0000             ATTN, need revision
+
+
+

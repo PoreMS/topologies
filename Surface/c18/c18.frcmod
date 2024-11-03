@@ -1,0 +1,30 @@
+Remark line goes here
+MASS
+ci 0.000         0.000               ATTN, no polarizability parameter
+
+BOND
+ci-os    0.00   11111       ATTN, need revision
+ci-h1    0.00   22222       ATTN, need revision
+c3-ci    0.00   33333       ATTN, need revision
+
+ANGLE
+ci-os-ci    0.000       11111   ATTN, need revision
+h1-ci-os    0.000       22222   ATTN, need revision
+c3-ci-os    0.000       33333   ATTN, need revision
+ci-c3-hc    0.000       44444   ATTN, need revision
+c3-c3-ci    0.000       55555   ATTN, need revision
+c3-ci-c3    0.000       66666   ATTN, need revision
+h1-ci-h1    0.000       77777   ATTN, need revision
+
+DIHE
+c3-ci-os-ci   1    0.000         11111           0.000      ATTN, need revision
+hc-c3-ci-os   1    0.000         22222           0.000      ATTN, need revision
+c3-c3-ci-os   1    0.000         33333           0.000      ATTN, need revision
+h1-ci-os-ci   1    0.000         44444           0.000      ATTN, need revision
+hc-c3-ci-c3   1    0.000         55555           0.000      ATTN, need revision
+c3-c3-ci-c3   1    0.000         66666           0.000      ATTN, need revision
+
+IMPROPER
+
+NONBON
+  ci          0.0000  0.0000             ATTN, need revision

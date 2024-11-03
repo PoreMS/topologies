@@ -1,0 +1,57 @@
+; TraPPE-EH - Transferable Potentials for Phase Equilibria - Explicit Hydrogen - doi.org/10.1021/jp0504827
+; e/kb (K) -> e/kb*kb*NA/1000 (kj/mol)
+;!!!!! https://doi.org/10.1063/5.0015184 (Mail Niels 06.11.22) !!!!
+
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               2               yes             0.5          0.83333333
+
+[ atomtypes ]
+; name    at.num    mass    charge ptype  sigma      epsilon
+c3             6  12.010000  0.00000000  A     0.330      0.0332571
+c1             6  12.010000  0.00000000  A     0.348      0.5612131
+n1             7  14.010000  0.00000000  A     0.295      0.4988561
+hc             1   1.008000  0.00000000  A     0.331      0.1272083
+
+[ moleculetype ]
+; Name            nrexcl
+ACN          3
+
+[ atoms ]
+;   nr  type  resi  res  atom  cgnr     charge      mass       ; qtot   bond_type
+     1   c3     1   ACN    C1    1     0.269     12.01000
+     2   c1     1   ACN    C2    2     0.129     12.01000
+     3   n1     1   ACN    N1    3    -0.398     14.01000
+     4   hc     1   ACN    H1    4     0.000      1.00800
+     5   hc     1   ACN    H2    5     0.000      1.00800
+     6   hc     1   ACN    H3    6     0.000      1.00800
+
+[ constraints ]
+;    ai     aj funct         c0         c1         c2         c3
+      1      2     1   0.1535
+      2      3     1   0.1157
+      1      4     1   0.0550
+      1      5     1   0.0550
+      1      6     1   0.0550
+
+[ pairs ]
+;    ai     aj funct         c0         c1         c2         c3
+      4      3     1
+      5      3     1
+      6      3     1
+
+[ angles ]
+;    ai     aj     ak funct         c0         c1         c2         c3
+      1      2      3     1   180.0 5000        ; fixed
+      2      1      4     1   110.7 313.996656
+      2      1      5     1   110.7 313.996656
+      2      1      6     1   110.7 313.996656
+      4      1      5     1   107.9 276.316392
+      4      1      6     1   107.9 276.316392
+      5      1      6     1   107.9 276.316392
+
+[ dihedrals ]
+;    ai     aj     ak     al funct         c0         c1         c2         c3         c4         c5
+      4      1      2      3     3   1.371854  -1.820825   0.529619   0.041405   0.068094  -0.021867
+      5      1      2      3     3   1.371854  -1.820825   0.529619   0.041405   0.068094  -0.021867
+      6      1      2      3     3   1.371854  -1.820825   0.529619   0.041405   0.068094  -0.021867

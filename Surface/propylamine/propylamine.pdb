@@ -1,0 +1,15 @@
+HETATM    1  Si1 PPA A   1       0.000   0.000   0.000  1.00  0.00           Si  
+HETATM    2   C1 PPA A   1       0.000   0.000   1.850  1.00  0.00            C  
+HETATM    3   C2 PPA A   1       0.770   0.000   3.184  1.00  0.00            C  
+HETATM    4   C3 PPA A   1       0.000   0.000   4.517  1.00  0.00            C  
+HETATM    5   N1 PPA A   1       0.735   0.000   5.790  1.00  0.00            N  
+HETATM    6   H1 PPA A   1      -0.545  -0.944   1.850  1.00  0.00            H  
+HETATM    7   H2 PPA A   1      -0.545   0.944   1.850  1.00  0.00            H  
+HETATM    8   H3 PPA A   1       1.315   0.944   3.184  1.00  0.00            H  
+HETATM    9   H4 PPA A   1       1.315  -0.944   3.184  1.00  0.00            H  
+HETATM   10   H5 PPA A   1      -0.545  -0.944   4.517  1.00  0.00            H  
+HETATM   11   H6 PPA A   1      -0.545   0.944   4.517  1.00  0.00            H  
+HETATM   12   H7 PPA A   1       1.280   0.944   5.790  1.00  0.00            H  
+HETATM   13   H8 PPA A   1       1.280  -0.944   5.790  1.00  0.00            H  
+TER
+END

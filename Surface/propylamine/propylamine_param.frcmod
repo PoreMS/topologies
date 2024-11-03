@@ -1,0 +1,22 @@
+remark goes here
+MASS
+si 28.086        0.000               ATTN, need revision
+
+BOND
+si-c3    0.18915 251793.120000       ATTN, need revision
+# si-hc    0.00   22222       ATTN, need revision
+
+ANGLE
+si-c3-c3    144.00000 526.012480   ATTN, need revision
+si-c3-hc    109.80005 387.773120   ATTN, need revision
+# c3-si-hc    0.000       33333   ATTN, need revision
+# hc-si-hc    0.000       44444   ATTN, need revision
+
+DIHE
+# c3-c3-si-hc   1    0.000         11111           0.000      ATTN, need revision
+# hc-c3-si-hc   1    0.000         22222           0.000      ATTN, need revision
+
+IMPROPER
+
+NONBON
+  si          0.250000     0.0004184             ATTN, need revision

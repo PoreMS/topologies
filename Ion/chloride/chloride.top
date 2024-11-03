@@ -1,0 +1,11 @@
+[ atomtypes ]
+; name   at.num    mass       charge   ptype  sigma        epsilon
+  cl     17        35.45000   0.0000   A      0.44010400   0.4184000
+
+[ moleculetype ]
+; molname   nrexcl
+  CL        3
+
+[ atoms ]
+; nr   type   resi   res   atom   cgnr   charge   mass
+  1    cl     1      CL    CL1    1     -1.0000   35.45000

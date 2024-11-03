@@ -1,0 +1,7 @@
+HETATM    1   C1 OOH A   1       0.950   0.000   0.671  1.00  0.00            C  
+HETATM    2   O1 OOH A   1       0.950   0.000   1.873  1.00  0.00            O  
+HETATM    3   O2 OOH A   1       2.113   0.000   0.000  1.00  0.00            O  
+HETATM    4   H1 OOH A   1       0.000   0.000   0.123  1.00  0.00            H  
+HETATM    5   H2 OOH A   1       2.955   0.000   0.486  1.00  0.00            H  
+TER
+END

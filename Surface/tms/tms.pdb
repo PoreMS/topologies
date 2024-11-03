@@ -1,0 +1,17 @@
+HETATM    1  Si1 TMS A   1       3.236   2.398   0.000  1.00  0.00           Si  
+HETATM    2   O1 TMS A   1       3.236   2.398   1.550  1.00  0.00            O
+HETATM    3  Si2 TMS A   1       1.984   2.398   2.464  1.00  0.00           Si
+HETATM    4   C1 TMS A   1       0.967   3.917   2.121  1.00  0.00            C
+HETATM    5   C2 TMS A   1       2.517   2.398   4.246  1.00  0.00            C
+HETATM    6   C3 TMS A   1       0.967   0.879   2.121  1.00  0.00            C
+HETATM    7   H1 TMS A   1       1.488   4.796   2.499  1.00  0.00            H
+HETATM    8   H2 TMS A   1       0.000   3.826   2.616  1.00  0.00            H
+HETATM    9   H3 TMS A   1       0.816   4.018   1.046  1.00  0.00            H
+HETATM   10   H4 TMS A   1       2.129   3.288   4.741  1.00  0.00            H
+HETATM   11   H5 TMS A   1       3.606   2.398   4.299  1.00  0.00            H
+HETATM   12   H6 TMS A   1       2.129   1.508   4.741  1.00  0.00            H
+HETATM   13   H7 TMS A   1       0.816   0.778   1.046  1.00  0.00            H
+HETATM   14   H8 TMS A   1       0.000   0.970   2.616  1.00  0.00            H
+HETATM   15   H9 TMS A   1       1.488   0.000   2.499  1.00  0.00            H
+TER
+END

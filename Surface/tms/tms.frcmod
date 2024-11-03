@@ -1,0 +1,27 @@
+remark goes here
+MASS
+si 0.000         0.000               ATTN, need revision
+
+BOND
+si-os    0.00   11111       ATTN, need revision
+si-h1    0.00   22222       ATTN, need revision
+si-c3    0.00   33333       ATTN, need revision
+
+ANGLE
+si-os-si    0.000       44444   ATTN, need revision
+os-si-h1    0.000       55555   ATTN, need revision
+os-si-c3    0.000       66666   ATTN, need revision
+si-c3-hc    0.000       77777   ATTN, need revision
+c3-si-c3    0.000       88888   ATTN, need revision
+h1-si-h1    0.000       99999   ATTN, need revision
+
+DIHE
+si-os-si-c3   1    0.000         10101           0.000      ATTN, need revision
+os-si-c3-hc   1    0.000         20202           0.000      ATTN, need revision
+si-os-si-h1   1    0.000         30303           0.000      ATTN, need revision
+c3-si-c3-hc   1    0.000         40404           0.000      ATTN, need revision
+
+IMPROPER
+
+NONBON
+  si          0.0000  0.0000             ATTN, need revision

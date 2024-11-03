@@ -1,0 +1,30 @@
+Remark line goes here
+MASS
+si 28.086         0.000               ATTN, need revision
+
+BOND
+si-os    0.16200 525000.000000       ATTN, need revision
+si-h1    0.14839 276646.080000       ATTN, need revision  <-- raus
+si-c3    0.18915 251793.120000       ATTN, need revision
+
+ANGLE
+si-os-si    147.0000000 529.527040   ATTN, need revision
+os-si-h1    109.7800500 425.094400   ATTN, need revision  <-- raus
+os-si-c3    107.9700500 569.024000   ATTN, need revision
+si-c3-hc    109.8000500 387.773120   ATTN, need revision
+si-c3-c3    144.0000000 526.012480   ATTN, need revision
+c3-si-c3    108.5040000 526.012480   ATTN, need revision
+h1-si-h1    107.5800500 329.699200   ATTN, need revision  <-- raus
+
+DIHE
+si-os-si-c3   1    0.0000000  0.6694400  3      ATTN, need revision
+os-si-c3-hc   1    0.0000000  1.0460000  1      ATTN, need revision
+c3-c3-si-os   1    0.0000000  0.6508400  3      ATTN, need revision
+si-os-si-h1   1    0.0000000  1.6038700  3      ATTN, need revision  <-- raus
+c3-si-c3-hc   1    0.0000000  0.6694400  3      ATTN, need revision
+c3-c3-si-c3   1    0.0000000  0.6694400  3      ATTN, need revision
+
+IMPROPER
+
+NONBON
+  si          0.250000     0.0004184             ATTN, need revision

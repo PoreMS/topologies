@@ -1,0 +1,72 @@
+remark goes here
+MASS
+ru    101.07000       0.000               ATTN, need revision
+cb     12.01000       0.000               ATTN, need revision
+si     28.08600       0.000               ATTN, need revision
+
+BOND
+ru-cl    0.23900  92048.000000       ATTN, need revision
+ru-cb    0.20800 117152.000000       ATTN, need revision
+ru-c2    0.18500 251040.000000       ATTN, need revision
+cb-na    0.13580 393296.000000       ATTN, need revision
+si-c3    0.18915 251793.120000       ATTN, need revision
+si-os    0.16200 525000.000000       ATTN, need revision
+si-h1    0.14839 276646.080000       ATTN, need revision  <-- raus
+
+ANGLE
+ru-cb-na    128.00000 292.880000   ATTN, need revision
+ru-c2-ca    167.01000 651.448800   ATTN, need revision
+ru-c2-ha    120.43000 417.144800   ATTN, need revision
+cl-ru-cl    147.00000 192.464000   ATTN, need revision
+cl-ru-cb     88.00000 627.600000   ATTN, need revision
+cl-ru-c2    106.50000 225.936000   ATTN, need revision
+cb-ru-c2     91.00000 502.080000   ATTN, need revision
+cb-na-c2     91.00000 502.080000   ATTN, need revision
+cb-na-ca     91.00000 502.080000   same as cb-na-c2
+cb-na-c3     91.00000 502.080000   ATTN, need revision
+na-cb-na    109.33005 611.700800   ATTN, need revision
+si-c3-c3    144.00000 526.012480   ATTN, need revision
+si-c3-hc    109.80005 387.773120   ATTN, need revision
+si-os-c3    113.41000 519.650000   ATTN, need revision
+si-os-si    147.00000 529.527040   ATTN, need revision
+c3-si-os    107.97005 569.024000   ATTN, need revision
+ca-c2-ha     49.06200 117.390000   Calculated with empirical approach
+os-si-os    110.24000 599.990000   ATTN, need revision
+os-si-h1    109.78005 425.094400   ATTN, need revision  <-- raus
+h1-si-h1    107.58005 329.699200   ATTN, need revision  <-- raus
+
+DIHE
+ru-cb-na-c2   1    0.00000   9.41400  2      ATTN, need revision
+ru-cb-na-ca   1    0.00000   9.41400  2      same as ru-cb-na-c2
+ru-cb-na-c3   1    0.00000   9.41400  2      ATTN, need revision
+cl-ru-cb-na   1  180.00000   2.92880  2      ATTN, need revision
+cl-ru-c2-ca   1  180.00000   3.76560  2      ATTN, need revision
+cl-ru-c2-ha   1  180.00000   3.76560  2      ATTN, need revision
+cb-ru-c2-ca   1  180.00000   3.76560  2      ATTN, need revision
+cb-ru-c2-ha   1  180.00000   3.76560  2      ATTN, need revision
+na-cb-ru-c2   1  180.00000   2.92880  2      ATTN, need revision
+na-cb-na-c2   1    0.00000   9.41400  2      ATTN, need revision
+na-cb-na-c3   1    0.00000   9.41400  2      ATTN, need revision
+na-cb-na-ca   1    0.00000   9.41400  2      ATTN, need revision
+si-os-si-h1   1    0.00000   1.60387  3      ATTN, need revision  <-- raus
+c3-c3-si-os   1    0.00000   0.65084  3      ATTN, need revision
+c3-si-os-c3   1  180.00000   0.41840  2      ATTN, need revision
+              1    0.00000   1.60247  3
+c3-si-os-si   1    0.00000   0.66944  3      ATTN, need revision
+os-si-c3-hc   1    0.00000   1.04600  1      ATTN, need revision
+os-si-os-c3   1  180.00000   5.64840  1      ATTN, need revision
+os-si-os-si   1  180.00000   5.64840  1      ATTN, need revision
+
+IMPROPER
+c2-ca-na-cb         1.1          180.0         2.0          Using default value
+c2-c3-na-cb         1.1          180.0         2.0          Using default value
+c2-h4-c2-na         1.1          180.0         2.0          Using default value
+ca-ca-ca-na         1.1          180.0         2.0          Using default value
+ca-ca-ca-ha         1.1          180.0         2.0          General improper torsional angle (2 general atom types)
+ca-ha-c2-ru         1.1          180.0         2.0          Using default value
+ca-ca-ca-os         1.1          180.0         2.0          Using default value
+
+NONBON - sigma- epsilon
+  ru          0.258000    12.4000000             ATTN, need revision
+  cb          0.339967     0.3598240             ATTN, need revision
+  si          0.250000     0.0004184             ATTN, need revision

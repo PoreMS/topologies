@@ -1,0 +1,113 @@
+; TraPPE-EH - Transferable Potentials for Phase Equilibria - Explicit Hydrogen - doi.org/10.1021/jp0504827
+; e/kb (K) -> e/kb*kb*NA/1000 (kj/mol)
+
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               2               yes             0.5          0.83333333
+
+[ atomtypes ]
+; name    at.num    mass    charge ptype  sigma      epsilon
+c3             6  12.010000  0.00000000  A     0.330      0.0332571
+c1             6  12.010000  0.00000000  A     0.348      0.5612131
+n1             7  14.010000  0.00000000  A     0.295      0.4988561
+hc             1   1.008000  0.00000000  A     0.331      0.1272083
+
+
+
+
+
+
+
+
+
+
+
+
+
+;(*) chrg from Edwards
+;LJ from  TraPPE
+;A rigid two mass system with the same mom. of inertia
+;as MeCN is used to provide a linear molecule. Me, C and
+;N are defined as dummies relativ to D1 and D2.
+
+
+; Thomson force field
+; from Kansas
+
+
+
+
+
+[ moleculetype ]
+; Name            nrexcl
+ACN          3
+
+[ atoms ]
+;   nr  type  resi  res  atom  cgnr     charge      mass       ; qtot   bond_type
+     1   c3     1   ACN    C1    1     0.269     12.01000
+     2   c1     1   ACN    C2    2     0.129     12.01000
+     3   n1     1   ACN    N1    3    -0.398     14.01000
+     4   hc     1   ACN    H1    4     0.000      1.00800
+     5   hc     1   ACN    H2    5     0.000      1.00800
+     6   hc     1   ACN    H3    6     0.000      1.00800
+
+
+       [ atoms ]
+       ;   nr  type    resnr   residu  atom    cgnr    charge	mass
+       1       D1       1       MeCN    D1AN    1        0.000   9.52912
+       2       D2       1       MeCN    D2AN    1        0.000  31.52358
+       3       MeAN     1       MeCN    C3AN    1        0.269   0.00000 ; (*)
+       4	     CAN      1       MeCN    C4AN    1        0.129   0.00000 ; (*)
+       5       NAN      1       MeCN    N5AN    1	      -0.398   0.00000 ; (*)
+
+
+
+[ constraints ]
+;    ai     aj funct         c0         c1         c2         c3
+      1      2     1   0.1535
+      2      3     1   0.1157
+      1      4     1   0.0550
+      1      5     1   0.0550
+      1      6     1   0.0550
+
+
+      [ constraints ]
+      ;  ai  aj funct           b0
+      1       2	1	   0.2700
+
+
+      [ dummies2 ]
+      ;  ai    aj    ak       funct   a
+          3     1     2       1       0.25982
+          4     1     2       1       0.83019
+          5     1     2       1	      1.25982
+
+
+      [ exclusions ]
+      3      4     5
+      4	5	3
+      5	4	3
+
+
+
+[ pairs ]
+;    ai     aj funct         c0         c1         c2         c3
+      4      3     1
+      5      3     1
+      6      3     1
+
+[ angles ]
+;    ai     aj     ak funct         c0         c1         c2         c3
+      1      2      3     1   180.0 5000        ; fixed
+      2      1      4     1   110.7 313.996656
+      2      1      5     1   110.7 313.996656
+      2      1      6     1   110.7 313.996656
+      4      1      5     1   107.9 276.316392
+      4      1      6     1   107.9 276.316392
+      5      1      6     1   107.9 276.316392
+
+[ dihedrals ]
+;    ai     aj     ak     al funct         c0         c1         c2         c3         c4         c5
+      4      1      2      3     3   1.371854  -1.820825   0.529619   0.041405   0.068094  -0.021867
+      5      1      2      3     3   1.371854  -1.820825   0.529619   0.041405   0.068094  -0.021867
+      6      1      2      3     3   1.371854  -1.820825   0.529619   0.041405   0.068094  -0.021867

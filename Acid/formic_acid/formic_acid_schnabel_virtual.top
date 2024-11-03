@@ -1,0 +1,49 @@
+; non-bonded parameters, bond lengths and angles taken from Schnabel et al., Chem. Phys. Lett. 435 (2007) 268-272
+; force constants for bonds and angles taken from GAFF2 model
+; force constants for dihedrals chosen such that trans conformation (wrt H atoms) is rather stable 
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               2               yes             0.5          0.83333333
+
+[ atomtypes ]
+; name    at.num    mass    charge ptype  sigma      epsilon
+c              6  12.010000  0.00000000  A    0.323350000      0.4987818
+o              8  16.000000  0.00000000  A    0.299530000      0.8039305
+oh             8  16.000000  0.00000000  A    0.314960000      0.7071306
+h5             1   1.008000  0.00000000  A    0.000000000      0.0000000
+ho             1   1.008000  0.00000000  A    0.000000000      0.0000000
+
+
+[ moleculetype ]
+; Name            nrexcl
+1OOH          3
+
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr    charge       mass  typeB    chargeB      massB
+; residue    1 1OOH rtp 1OOH q 0.0
+    1          c      1    1OOH     C1      1  0.00000000  13.018000   ; includes mass of h5 
+    2          o      1    1OOH     O1      2 -0.42186000  16.000000   ; 
+    3         oh      1    1OOH     O2      3 -0.31574000  16.000000   ; 
+    4         h5      1    1OOH     H1      4  0.29364000   0.000000   ; mass set to zero (virtual site) 
+    5         ho      1    1OOH     H2      5  0.44396000   1.008000   ; qtot  0.000000
+
+[ bonds ]
+;    ai     aj funct         c0         c1         c2         c3
+      1      2     1   0.121473 546095.680000
+      1      3     1   0.138988 320578.080000
+      3      5     1   0.098023 471536.800000
+
+[ angles ]
+;    ai     aj     ak funct         c0         c1         c2         c3
+      2      1      3     1   120.2550000 968.177600
+      1      3      5     1   110.8040000 431.788800
+
+[ dihedrals ]
+;    ai     aj     ak     al funct         c0         c1         c2         c3         c4         c5
+      2      1      3      5     2    0.0000000  15.16700
+      4      1      3      5     1  180.0000771  9.6232000  2
+
+[ virtual_sites3 ]
+; Vsite from                    funct   a               b
+4       1       2       3       1      -0.1099649196   -0.0857327571
+

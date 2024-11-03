@@ -1,0 +1,11 @@
+[ atomtypes ]
+; name   bond_type   mass       charge   ptype   sigma   epsilon
+  NA     11          22.98977   1.0000   A       0.244   0.36585
+
+[ moleculetype ]
+; molname   nrexcl
+  NA        1
+
+[ atoms ]
+; nr   type   resi   res   atom   cgnr   charge   mass
+  1    NA     1      NA    Na1    1      1.0000   22.98977

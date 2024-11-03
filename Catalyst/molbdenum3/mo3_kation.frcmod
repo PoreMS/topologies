@@ -1,0 +1,64 @@
+Remark line goes here
+MASS
+mo 0.000         0.000               ATTN, no polarizability parameter
+si 0.000         0.000               ATTN, no polarizability parameter
+
+BOND
+mo-os    0.00   0.000       ATTN, need revision
+c2-mo    0.00   0.000       ATTN, need revision
+mo-ne    0.00   0.000       ATTN, need revision
+os-si    0.00   0.000       ATTN, need revision
+oh-si    0.00   0.000       ATTN, need revision
+
+ANGLE
+mo-os-si    0.000       0.000   ATTN, need revision
+mo-c2-na    0.000       0.000   ATTN, need revision
+ca-ne-mo    0.000       0.000   ATTN, need revision
+ha-c2-mo    0.000       0.000   ATTN, need revision
+c3-c2-mo    0.000       0.000   ATTN, need revision
+c2-mo-os    0.000       0.000   ATTN, need revision
+ne-mo-os    0.000       0.000   ATTN, need revision
+oh-si-os    0.000       0.000   ATTN, need revision
+os-si-os    0.000       0.000   ATTN, need revision
+ho-oh-si    0.000       0.000   ATTN, need revision
+si-os-si    0.000       0.000   ATTN, need revision
+oh-si-oh    0.000       0.000   ATTN, need revision
+c2-mo-ne    0.000       0.000   ATTN, need revision
+c2-mo-c2    0.000       0.000   ATTN, need revision
+
+DIHE
+mo-os-si-oh   1    0.000         0.000           0.000      ATTN, need revision
+mo-os-si-os   1    0.000         0.000           0.000      ATTN, need revision
+na-c2-mo-os   1    0.000         0.000           0.000      ATTN, need revision
+os-mo-ne-ca   1    0.000         0.000           0.000      ATTN, need revision
+ha-c2-mo-os   1    0.000         0.000           0.000      ATTN, need revision
+c3-c2-mo-os   1    0.000         0.000           0.000      ATTN, need revision
+ho-oh-si-os   1    0.000         0.000           0.000      ATTN, need revision
+si-os-si-os   1    0.000         0.000           0.000      ATTN, need revision
+c2-mo-os-si   1    0.000         0.000           0.000      ATTN, need revision
+ne-mo-os-si   1    0.000         0.000           0.000      ATTN, need revision
+ho-oh-si-oh   1    0.000         0.000           0.000      ATTN, need revision
+si-os-si-oh   1    0.000         0.000           0.000      ATTN, need revision
+na-c2-mo-ne   1    0.000         0.000           0.000      ATTN, need revision
+na-c2-mo-c2   1    0.000         0.000           0.000      ATTN, need revision
+c2-mo-ne-ca   1    0.000         0.000           0.000      ATTN, need revision
+ha-c2-mo-c2   1    0.000         0.000           0.000      ATTN, need revision
+c3-c2-mo-c2   1    0.000         0.000           0.000      ATTN, need revision
+ha-c2-mo-ne   1    0.000         0.000           0.000      ATTN, need revision
+c3-c2-mo-ne   1    0.000         0.000           0.000      ATTN, need revision
+
+IMPROPER
+c2-c2-na-ca         1.1          180.0         2.0          Using the default value
+mo-na-c2-na         1.1          180.0         2.0          Using the default value
+c2-h4-c2-na         1.1          180.0         2.0          Using the default value
+ca-ca-ca-na         1.1          180.0         2.0          Using the default value
+ca-ca-ca-ha         1.1          180.0         2.0          Using general improper torsional angle  X- X-ca-ha, penalty score=  6.0)
+ca-ca-ca-ne         1.1          180.0         2.0          Using the default value
+c3-ha-c2-mo         1.1          180.0         2.0          Using the default value
+
+NONBON
+  mo          0.0000  0.0000             ATTN, need revision
+  si          0.0000  0.0000             ATTN, need revision
+
+
+

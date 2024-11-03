@@ -1,0 +1,20 @@
+remark goes here
+MASS
+si 0.000         0.000               ATTN, need revision
+
+BOND
+si-c3    0.00   11111       ATTN, need revision
+
+ANGLE
+si-c3-c3    0.000       11111   ATTN, need revision
+si-c3-hc    0.000       22222   ATTN, need revision
+
+DIHE
+
+IMPROPER
+c3-ca-nh-hn         1.1          180.0         2.0          Using default value
+nb-nb-ca-nh         1.1          180.0         2.0          Using default value
+nb-nb-ca-oh         1.1          180.0         2.0          Using default value
+
+NONBON
+  si          0.0000  0.0000             ATTN, need revision

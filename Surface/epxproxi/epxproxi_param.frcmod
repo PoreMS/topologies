@@ -1,0 +1,43 @@
+remark goes here
+MASS
+si 28.086         0.000               ATTN, need revision
+
+BOND
+si-os    0.16200 525000.000000       ATTN, need revision
+si-h1    0.14839 276646.080000       ATTN, need revision
+si-c3    0.18915 251793.120000       ATTN, need revision
+
+ANGLE
+si-os-si    147.00000 529.527040   ATTN, need revision
+os-si-h1    109.78005 425.094400   ATTN, need revision
+os-si-os    110.24000 599.990000   ATTN, need revision (angelehnt an os-c3-os)
+os-si-c3    107.97005 569.024000   ATTN, need revision
+si-c3-hc    109.80005 387.773120   ATTN, need revision
+si-os-c3    113.41000 519.650000   ATTN, need revision (angelehnt an c3-os-c3)
+h1-si-h1    107.58005 329.699200   ATTN, need revision
+
+DIHE
+si-os-si-os   1    180.000  5.64840  1      ATTN, need revision (angelehnt an c3-os-c3-os)
+si-os-si-c3   1    0.00000  0.66944  3      ATTN, need revision
+os-si-c3-hc   1    0.00000  1.04600  1      ATTN, need revision
+os-si-os-c3   1    180.000  5.64840  1      ATTN, need revision (angelehnt an os-c3-os-c3)
+si-os-si-h1   1    0.00000  1.60387  3      ATTN, need revision
+c3-si-os-c3   1    180.000  0.41840  2      ATTN, need revision (angelehnt an c3-c3-os-c3)
+              1    0.00000  1.60247  3
+os-c3-cx-cx   1    0.156         0.000           3.000      same as X -c3-c3-X
+os-c3-cx-os   1    0.144         0.000          -3.000      same as os-c3-c3-os
+os-c3-cx-os   1    1.175         0.000           2.000      same as os-c3-c3-os
+os-c3-cx-h1   1    0.000         0.000          -3.000      same as h1-c3-c3-os
+os-c3-cx-h1   1    0.250         0.000           1.000      same as h1-c3-c3-os
+c3-cx-os-cx   1    0.383         0.000           3.000      same as X -c3-os-X
+cx-cx-os-cx   1    0.383         0.000           3.000      same as c3-cx-os-cx
+cx-os-cx-h1   1    0.383         0.000           3.000      same as X -c3-os-X
+cx-cx-c3-h1   1    0.156         0.000           3.000      same as X -c3-c3-X
+os-cx-c3-h1   1    0.000         0.000          -3.000      same as h1-c3-c3-os
+os-cx-c3-h1   1    0.250         0.000           1.000      same as h1-c3-c3-os
+h1-c3-cx-h1   1    0.156         0.000           3.000      same as X -c3-c3-X
+
+IMPROPER
+
+NONBON
+  si          0.2500  0.0004             ATTN, need revision

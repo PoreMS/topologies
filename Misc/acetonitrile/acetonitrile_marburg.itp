@@ -1,0 +1,75 @@
+; This include topology was generated for the paper below:
+; Nina M. Fischer, Paul J. van Maaren, Jonas C. Ditz, and David van der Spoel
+; Properties of Organic Liquids when Simulated with Long-Range Lennard-Jones interactions
+; Submitted for publication, 2015
+; REFERENCE Fischer2015a
+
+[ atomtypes ]
+;type mass charge ptype V W
+ CG331  12.01100       0.010        A 0.3652685	0.326352 ;original 0.365268474438	0.326352
+  HGA3   1.00800	  0.090	 A 0.2387609	0.100416 ;original 0.238760856462	0.100416 
+ CG2O5  12.01100	  0.38	        A 0.3563595	0.37656  ;original 0.356359487256	0.37656
+ OG2D3  15.99940      -0.46	        A 0.3029056	0.2092   ;original 0.302905564168	0.2092
+CG2R61  12.01100      -0.115	 A 0.3550053	0.29288  ;original 0.355005321205	0.29288
+ HGR61   1.00800	  0.115	 A 0.2420037	0.12552  ;original 0.242003727796	0.12552 
+MeAN     0.00000       0.000       D   0.375      0.815 ; (*)
+ CAN     0.00000       0.000       D   0.355      0.499 ; (*)
+ NAN     0.00000       0.000       D   0.295      0.499 ; (*)
+  D1     9.52912       0.000       A   0.0           0.0
+  D2    31.52358       0.000       A   0.0           0.0
+  OM    15.99940       0.000       A   0.27   1.912
+  OA    15.99940       0.000       A   0.307  0.711
+  OC    15.99940       0.000       A   0.305  0.657
+  O     15.99940       0.000       A   0.302  0.773 
+  OW    15.99940       0.000       A   0.31657  0.650 
+  CO    15.99940       0.000       A   0.390  0.341
+  CH    13.01910       0.000       A   0.498  0.083       
+  CH2   14.02700       0.000       A   0.395  0.383
+  CH3   15.03500       0.000       A   0.375  0.815  
+  Csp2  12.011         0.000       A   0.3850  0.166
+  CH2sp2  14.027       0.000       A   0.3675  0.707
+  HO    1.00800       0.000        A   0.129  0.0015
+  HW    1.00800       0.000        A   0.0    0.00
+  H     1.00800       0.000        A   0.0    0.00
+  SI    28.08000       0.000       A   0.25   0.0004 
+  NA    22.98980       0.000        A   0.2575 0.062
+
+[ moleculetype ]
+; name  nrexcl
+ACN2        2
+
+[ atoms ]
+;   nr  type    resnr   residu  atom    cgnr    charge	mass
+1       D1       1       MeCN    D1AN    1        0.000   9.52912       
+2       D2       1       MeCN    D2AN    1        0.000  31.52358       
+3       MeAN     1       MeCN    C3AN    1        0.269   0.00000 ; (*)
+4	CAN      1       MeCN    C4AN    1        0.129   0.00000 ; (*)
+5       NAN      1       MeCN    N5AN    1	 -0.398   0.00000 ; (*)
+
+[ constraints ]
+;  ai  aj funct           b0
+1       2	1	   0.2700
+
+[ dummies2 ]
+;  ai    aj    ak       funct   a
+    3     1     2       1       0.25982
+    4     1     2       1       0.83019
+    5     1     2       1	1.25982	
+
+
+[ exclusions ]
+3      4     5
+4	5	3
+5	4	3
+
+;(*) chrg from Edwards
+;LJ from  TraPPE
+;A rigid two mass system with the same mom. of inertia 
+;as MeCN is used to provide a linear molecule. Me, C and
+;N are defined as dummies relativ to D1 and D2.
+
+ 
+; Thomson force field
+; from Kansas
+
+

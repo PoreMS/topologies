@@ -1,0 +1,56 @@
+remark goes here
+MASS
+si 28.086         0.000               ATTN, need revision
+cb 12.01000         0.000               ATTN, need revision
+ru 101.07         0.000               ATTN, need revision
+
+BOND
+si-c3    0.00   11111       ATTN, need revision
+na-cb    0.00   22222       ATTN, need revision
+cb-ru    0.00   33333       ATTN, need revision
+c2-ru    0.00   44444       ATTN, need revision
+ru-cl    0.00   55555       ATTN, need revision
+
+ANGLE
+si-c3-c3    0.000       11111   ATTN, need revision
+si-c3-hc    0.000       22222   ATTN, need revision
+c3-na-cb    0.000       33333   ATTN, need revision
+na-cb-na    0.000       44444   ATTN, need revision
+na-cb-ru    0.000       55555   ATTN, need revision
+c2-na-cb    0.000       66666   ATTN, need revision
+cb-na-ca    0.000       66666   same as c2-na-cb
+cb-ru-c2    0.000       88888   ATTN, need revision
+cb-ru-cl    0.000       99999   ATTN, need revision
+ca-c2-ru    0.000       10101   ATTN, need revision
+ca-c2-ha   49.062     117.390   Calculated with empirical approach
+c2-ru-cl    0.000       21212   ATTN, need revision
+ru-c2-ha    0.000       32323   ATTN, need revision
+cl-ru-cl    0.000       43434   ATTN, need revision
+
+DIHE
+c3-na-cb-na   1    0.000         11111           0.000      ATTN, need revision
+c3-na-cb-ru   1    0.000         22222           0.000      ATTN, need revision
+na-cb-na-c2   1    0.000         33333           0.000      ATTN, need revision
+na-cb-na-ca   1    0.000         44444           0.000      ATTN, need revision
+na-cb-ru-c2   1    0.000         55555           0.000      ATTN, need revision
+na-cb-ru-cl   1    0.000         66666           0.000      ATTN, need revision
+c2-na-cb-ru   1    0.000         77777           0.000      ATTN, need revision
+cb-ru-c2-ca   1    0.000         88888           0.000      ATTN, need revision
+cb-ru-c2-ha   1    0.000         99999           0.000      ATTN, need revision
+ca-na-cb-ru   1    0.000         77777           0.000      same as c2-na-cb-ru
+ca-c2-ru-cl   1    0.000         21212           0.000      ATTN, need revision
+cl-ru-c2-ha   1    0.000         32323           0.000      ATTN, need revision
+
+IMPROPER
+c2-c3-na-cb         1.1          180.0         2.0          Using default value
+c2-h4-c2-na         1.1          180.0         2.0          Using default value
+c2-ca-na-cb         1.1          180.0         2.0          Using default value
+ca-ca-ca-na         1.1          180.0         2.0          Using default value
+ca-ca-ca-ha         1.1          180.0         2.0          General improper torsional angle (2 general atom types)
+ca-ca-ca-os         1.1          180.0         2.0          Using default value
+ca-ha-c2-ru         1.1          180.0         2.0          Using default value
+
+NONBON
+  si          0.0000  0.0000             ATTN, need revision
+  cb          0.0000  0.0000             ATTN, need revision
+  ru          0.0000  0.0000             ATTN, need revision
