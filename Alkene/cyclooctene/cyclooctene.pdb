@@ -1,0 +1,32 @@
+COMPND    cyclooctene
+HETATM    1  C1  UNL     1      -0.614  -1.191   0.709  1.00  0.00           C  
+HETATM    2  C2  UNL     1       0.616  -1.691   0.007  1.00  0.00           C  
+HETATM    3  C3  UNL     1       1.452  -0.624  -0.602  1.00  0.00           C  
+HETATM    4  C4  UNL     1       1.645   0.587   0.262  1.00  0.00           C  
+HETATM    5  C5  UNL     1       0.762   1.665  -0.263  1.00  0.00           C  
+HETATM    6  C6  UNL     1      -0.550   1.815  -0.282  1.00  0.00           C  
+HETATM    7  C7  UNL     1      -1.689   1.014   0.192  1.00  0.00           C  
+HETATM    8  C8  UNL     1      -1.555  -0.453  -0.174  1.00  0.00           C  
+HETATM    9  H1  UNL     1      -1.132  -2.106   1.119  1.00  0.00           H  
+HETATM   10  H2  UNL     1      -0.370  -0.580   1.599  1.00  0.00           H  
+HETATM   11  H3  UNL     1       0.349  -2.438  -0.735  1.00  0.00           H  
+HETATM   12  H4  UNL     1       1.243  -2.207   0.783  1.00  0.00           H  
+HETATM   13  H5  UNL     1       2.480  -1.064  -0.768  1.00  0.00           H  
+HETATM   14  H6  UNL     1       1.116  -0.341  -1.638  1.00  0.00           H  
+HETATM   15  H7  UNL     1       2.720   0.927   0.264  1.00  0.00           H  
+HETATM   16  H8  UNL     1       1.428   0.345   1.328  1.00  0.00           H  
+HETATM   17  H9  UNL     1       1.334   2.467  -0.710  1.00  0.00           H  
+HETATM   18  H10 UNL     1      -0.843   2.746  -0.757  1.00  0.00           H  
+HETATM   19  H11 UNL     1      -2.621   1.404  -0.294  1.00  0.00           H  
+HETATM   20  H12 UNL     1      -1.848   1.122   1.285  1.00  0.00           H  
+HETATM   21  H13 UNL     1      -2.598  -0.874  -0.071  1.00  0.00           H  
+HETATM   22  H14 UNL     1      -1.325  -0.523  -1.255  1.00  0.00           H  
+CONECT    1    2    8    9   10
+CONECT    2    3   11   12
+CONECT    3    4   13   14
+CONECT    4    5   15   16
+CONECT    5    6    6   17
+CONECT    6    7   18
+CONECT    7    8   19   20
+CONECT    8   21   22
+END
